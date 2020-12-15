@@ -48,3 +48,154 @@ section p {
     font-family: "Times New Roman", Times, serif;
     font-size: small;
 }
+section h2 {
+    font-size: 36px;
+    font-weight: 600;
+}
+section h3 {
+    font-size: 24px;
+    font-weight: 600;
+}
+section button {
+    width: 345px;
+    height: 48px;
+    background-color: black;
+    color: white;
+    border-radius: 24px;
+}
+.mySkillTitle {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 60%;
+    border-bottom: thin solid black;
+}
+.mySkillContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 48px;
+    margin-top: 24px;
+}
+.mySkillCard {
+    margin-top: 80px;
+    margin-bottom: 48px;
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.mySkillSection {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 80%;
+    width: 80%;
+}
+.mySkillImage {
+    width: 80%;
+    height: auto;
+}
+
+.myWorkContainer {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    grid-template-rows: 1fr 6fr 1fr;
+    grid-template-areas: 
+        'header'
+        'body'
+        'bottom';
+    height: 60%;
+    width: 60%;
+}
+.myWorkHeader {
+    grid-area: header;
+    text-align: center;
+    width: 60%;
+    border-bottom: thin solid black;
+}
+.myWorkSection {
+    grid-area: body;
+}
+.myWorkBottom {
+    grid-area: bottom;
+    background-color: wheat;
+}
+.myWorkCard {
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    grid-template-areas: 
+        'pic desc';
+    justify-items: center;
+    align-items: center;
+}
+.myWorkCardReverse {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    grid-template-areas: 
+        'desc pic';
+    justify-items: center;
+    align-items: center;
+}
+.myWorkDesc {
+    grid-area: desc;
+    text-align: center;
+}
+.myWorkPic {
+    grid-area: pic;
+    width: 100%;
+    height: auto;
+}
+
+@media only all and (max-width: 600px) {
+    .logo {
+        width: 100px;
+        padding: 1%;
+        text-align: center;
+    }
+
+    .mySkillSection {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        height: auto;
+        width: 100%;
+    }
+    .mySkillCard {
+        margin-top: 80px;
+        margin-bottom: 48px;
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .myWorkCard {
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: none;
+        grid-template-areas: 
+            'pic'
+            'desc';
+        justify-items: center;
+        align-items: center;
+    }
+    .myWorkCardReverse {
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: none;
+        grid-template-areas: 
+            'pic'
+            'desc';
+        justify-items: center;
+        align-items: center;
+    }
+}
