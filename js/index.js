@@ -1,4 +1,6 @@
 console.log('index.js loaded');
+$(".selfIntro").hide();
+$("#downloadButton").hide();
 
 // hover over navigation bar
 $('li').hover(function() {
@@ -58,3 +60,12 @@ $('.mySkillCard').hover(function() {
 }, function() {
     $(this).removeClass('imageTransition');
 });
+
+// home page animation
+$(".profileImg").on("click", function() {
+   $(".selfIntro").fadeIn(2000);
+});
+
+$(".selfIntro").on("click", function() {
+    $("#downloadButton").fadeIn(2000);
+ });
