@@ -3,6 +3,8 @@ header {
 }
 li {
     color: white;
+    font-size: 24px;
+    padding: 4px;
 }
 .navigation {
     width: 35%;
@@ -151,6 +153,17 @@ section button {
     grid-area: pic;
     width: 100%;
     height: auto;
+}
+
+.imageTransition {
+    -webkit-transform: scale(1.2); 
+    -moz-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
+.selectedTab {
+    border-bottom: thin solid white;
 }
 
 @media only all and (max-width: 600px) {

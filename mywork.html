@@ -11,10 +11,10 @@
         </div>
         <nav class="inline-block navigation">
             <ul>
-                <li class="inline-block">about</li>
-                <li class="inline-block">skills</li>
-                <li class="inline-block">work</li>
-                <li class="inline-block">contact</li>   
+                <li class="inline-block aboutmelink">about</li>
+                <li class="inline-block myskillslink">skills</li>
+                <li class="inline-block myworklink selectedTab">work</li>
+                <li class="inline-block contactme">contact</li>    
             </ul>
         </nav>
     </header>
@@ -48,17 +48,19 @@
                 <img class="myWorkPic" src="images/My UX Skills-3.jpg"/>
             </div>
         </div>
-        <button type="myWorkBottom"> 
-            View My Works
+        <button type="myWorkBottom" class="myskillslink"> 
+            View my skill
         </button>
     </section>
     <footer>
         <ul>
-            <li class="inline-block">about</li>
-            <li class="inline-block">skills</li>
-            <li class="inline-block">work</li>
-            <li class="inline-block">contact</li>   
+            <li class="inline-block aboutmelink">about</li>
+            <li class="inline-block myskillslink">skills</li>
+            <li class="inline-block myworklink selectedTab">work</li>
+            <li class="inline-block contactme">contact</li>   
         </ul>  
     </footer>
 </body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="js/index.js"></script>
 </html>
